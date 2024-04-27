@@ -1,0 +1,96 @@
+.header{
+    grid-area: header;
+}
+
+
+
+.bg-header{
+    background-color: #28547c;
+}
+
+.header-tit{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    grid-area: main;
+    height: max-content;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    width: 100%;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-areas: 
+        'header header header header header header header'
+        'sidebar main main main main main main'
+        'footer footer footer footer footer footer footer';
+    height: max-content;
+}
+
+.contenido-perfil{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenido-perfil-item{
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+
+menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+menu li{
+    list-style: none;
+    display: flex;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.producto{
+    text-align: center;
+    height: max-content;
+    background-color: white;
+}
+
+.producto img{
+    width: 40%;
+    height: 200px;
+    text-align: center;
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.bt-comprar{
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
